@@ -53,6 +53,8 @@ Limitations
 
 Due to the way Responsive Table Cards works, the 'id' attribute may not be used in any part of the table's contents.  Use 'class' and 'data-' instead.  Doing so can be more semantic that way anyway.
 
+Attached events on elements are also lost during card creation.  This is unavoidable.  Listen for the 'tablecards:mode' event on the table to trigger the first time this plugin switches to card mode.
+
 Options
 -------
 
@@ -67,3 +69,15 @@ The following options may be passed to TableCards:
 * postinit - A callback function to run after each TableCards initialization is run (Default is null).
 
 To destroy the instance and restore the table to its initial state, simply call:  `$('#mytable').TableCards('destroy');`
+
+Events
+------
+
+The following custom events may be listened for:
+
+* tablecards:mode - Notifies after switching the mode.  An optional parameter is passed containing a string with the new mode - either 'card' or 'table'.
+
+The following custom events may be manually triggered:
+
+* tablecards:resize - Notifies TableCards that the table has been resized.
+* tablecards:datachanged - Notifies TableCards that the data in the table has changed and to reset any width calculations at the first available opportunity.
