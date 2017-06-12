@@ -5,6 +5,8 @@ This jQuery plugin generates cards to convert wide tables into one or two column
 
 When generating cards, each row (including thead and tfoot) is processed using a string-based template.  This makes for highly efficient delivery of naturally tabular data to all devices but only generate the extra column on smaller displays.
 
+Combined with [TableBodyScroll](https://github.com/cubiclesoft/jquery-tablebodyscroll), traditional tables can be displayed on all devices in a neat, compact format.
+
 Usage
 -----
 
