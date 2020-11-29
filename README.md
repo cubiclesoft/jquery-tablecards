@@ -7,6 +7,8 @@ When generating cards, each row (including thead and tfoot) is processed using a
 
 Combined with [TableBodyScroll](https://github.com/cubiclesoft/jquery-tablebodyscroll), traditional tables can be displayed on all devices in a neat, compact format.
 
+[![Donate](https://cubiclesoft.com/res/donate-shield.png)](https://cubiclesoft.com/donate/) [![Discord](https://img.shields.io/discord/777282089980526602?label=chat&logo=discord)](https://cubiclesoft.com/product-support/github/)
+
 Usage
 -----
 
